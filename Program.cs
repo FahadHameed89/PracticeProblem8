@@ -14,13 +14,13 @@ namespace PracticeProblem8
             double side1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"You entered {side1}! Please enter the length of the second side:");                               // Asks for 2nd input
             double side2 = Convert.ToDouble(Console.ReadLine());
-            double A = side1 * side1;
-            double B = side2 * side2;
-            double C = A + B;
-            double D = Math.Sqrt(C);
-            decimal E = Convert.ToDecimal(D);
-            decimal F = Math.Round(E, 2);
-            Console.WriteLine($"The hypotenuse is {F}!");
+            double A = side1 * side1;           // get the value of A^2
+            double B = side2 * side2;           // get the value of B^2
+            double C = A + B;                   // get the value of C^2
+            double D = Math.Sqrt(C);            // get the value of C 
+            decimal E = Convert.ToDecimal(D);               // Convert to a decimal
+            decimal F = Math.Round(E, 2);                   // And round to 2 spaces
+            Console.WriteLine($"The hypotenuse is {F}!");       // Did I really need to use 6 variables? Probably not...
             Console.ReadLine();
         }
     }
